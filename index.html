@@ -2,30 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Oscar Rivera | Portafolio</title>
+  <title>Oscar Rivera | Cyber Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- FONDO ANIMADO -->
+<!-- FONDO -->
 <canvas id="bg-animation"></canvas>
 
 <div class="container">
 
   <!-- HERO -->
   <header class="hero">
-    <img src="https://via.placeholder.com/140" class="profile-img">
-
     <h1>Oscar Rivera</h1>
 
     <p class="subtitle">
-      Especialista en Seguridad Electrónica e Infraestructura Tecnológica
+      Analista de Operaciones | Seguridad | Tecnología
     </p>
 
     <p class="subtext">
-      Experiencia en monitoreo, control de accesos y operaciones en entornos críticos.
-      Formación continua en ciberseguridad y networking.
+      Más de 10 años operando en entornos críticos donde la precisión y el control son clave.
     </p>
 
     <div class="buttons">
@@ -36,92 +33,95 @@
       <a href="https://www.credly.com/users/oscar-rivera.74eac1dc" target="_blank" class="btn">
         Credly
       </a>
-
-      <a href="Oscar-Rivera-CV.pdf" class="btn secondary" download>
-        Descargar CV
-      </a>
     </div>
   </header>
 
+  <!-- RADAR -->
+  <div class="radar-container">
+    <div class="radar">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="scanner-line"></div>
+
   <!-- PERFIL -->
   <section class="card fade-in">
+    <p class="section-tag">01 — PROFILE</p>
     <h2>Perfil Profesional</h2>
     <p>
-      Profesional con experiencia en monitoreo de sistemas de videovigilancia,
-      control de accesos e infraestructura tecnológica. Enfocado en crecimiento
-      hacia ciberseguridad, con formación en Cisco Networking Academy y análisis de datos.
+      Analista de Operaciones Logísticas con más de 10 años de experiencia en monitoreo,
+      control operativo y análisis en entornos bancarios y logísticos.
+    </p>
+    <p>
+      Especializado en trazabilidad de flota, monitoreo GPS y CCTV,
+      así como en la generación de KPIs para la toma de decisiones.
     </p>
   </section>
 
   <!-- EXPERIENCIA -->
   <section class="card fade-in">
-    <h2>Experiencia</h2>
+    <p class="section-tag">02 — EXPERIENCE</p>
+    <h2>Experiencia Profesional</h2>
+
+    <h3>Dicarina</h3>
+    <p>Analista de Operaciones Logísticas | 2023 – Actualidad</p>
     <ul>
-      <li>Monitoreo de sistemas CCTV</li>
-      <li>Gestión de control de accesos</li>
-      <li>Supervisión de infraestructura de seguridad</li>
+      <li>Monitoreo GPS y control operativo</li>
+      <li>Análisis de KPIs e incidencias</li>
+      <li>Optimización de procesos logísticos</li>
+    </ul>
+
+    <h3>BAC Credomatic</h3>
+    <p>Especialista en Seguridad Electrónica | 2018 – 2021</p>
+    <ul>
+      <li>Auditorías y análisis de riesgos</li>
+      <li>Control de CCTV y accesos</li>
     </ul>
   </section>
 
   <!-- HABILIDADES -->
   <section class="card fade-in">
-    <h2>Habilidades Técnicas</h2>
+    <p class="section-tag">03 — SKILLS</p>
+    <h2>Habilidades</h2>
 
     <div class="skill">
-      <span>Seguridad Electrónica</span>
+      <span>Monitoreo GPS</span>
       <div class="bar"><div style="width:90%"></div></div>
     </div>
 
     <div class="skill">
-      <span>Redes / Networking</span>
-      <div class="bar"><div style="width:75%"></div></div>
+      <span>Análisis de KPIs</span>
+      <div class="bar"><div style="width:85%"></div></div>
     </div>
 
     <div class="skill">
-      <span>Ciberseguridad (en formación)</span>
-      <div class="bar"><div style="width:65%"></div></div>
+      <span>CCTV & Seguridad</span>
+      <div class="bar"><div style="width:80%"></div></div>
     </div>
-
-  </section>
-
-  <!-- CERTIFICACIONES -->
-  <section class="card fade-in">
-    <h2>Certificaciones</h2>
-    <ul>
-      <li>Cisco Networking Academy</li>
-      <li>AI & Networking Fundamentals</li>
-      <li>Data Analytics (en progreso)</li>
-    </ul>
-  </section>
-
-  <!-- CREDLY -->
-  <section class="card fade-in">
-    <h2>Certificaciones Verificadas</h2>
-    <p>Puedes validar todas mis certificaciones en Credly:</p>
-
-    <a href="https://www.credly.com/users/oscar-rivera.74eac1dc" target="_blank" class="btn">
-      Ver Credly
-    </a>
   </section>
 
 </div>
 
-<!-- SCRIPT ANIMACIONES SCROLL -->
+<!-- SCROLL ANIMACIÓN -->
 <script>
-  const elements = document.querySelectorAll('.fade-in');
+const elements = document.querySelectorAll('.fade-in');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
   });
+});
 
-  elements.forEach(el => observer.observe(el));
+elements.forEach(el => observer.observe(el));
 </script>
 
-<!-- SCRIPT FONDO ANIMADO -->
+<!-- FONDO TECNOLÓGICO -->
 <script>
 const canvas = document.getElementById("bg-animation");
 const ctx = canvas.getContext("2d");
@@ -131,11 +131,10 @@ canvas.height = window.innerHeight;
 
 let particles = [];
 
-for (let i = 0; i < 80; i++) {
+for (let i = 0; i < 70; i++) {
   particles.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 2,
     dx: (Math.random() - 0.5),
     dy: (Math.random() - 0.5)
   });
@@ -149,12 +148,21 @@ function animate() {
     p.y += p.dy;
 
     ctx.beginPath();
-    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(37, 99, 235, 0.5)";
+    ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+    ctx.fillStyle = "#22c55e";
     ctx.fill();
 
-    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    particles.forEach(p2 => {
+      let dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+      if (dist < 120) {
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = "rgba(34,197,94,0.1)";
+        ctx.stroke();
+      }
+    });
+
   });
 
   requestAnimationFrame(animate);
