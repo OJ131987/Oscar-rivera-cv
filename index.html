@@ -8,43 +8,41 @@
 
 <body>
 
-<!-- FONDO -->
 <canvas id="bg-animation"></canvas>
 
 <div class="container">
 
-  <!-- HERO -->
+  <!-- HERO + RADAR -->
   <header class="hero">
-    <h1>Oscar Rivera</h1>
 
-    <p class="subtitle">
-      Analista de Operaciones | Seguridad | Tecnología
-    </p>
+    <div class="hero-content">
+      <h1>Oscar Rivera</h1>
 
-    <p class="subtext">
-      Más de 10 años operando en entornos críticos donde la precisión y el control son clave.
-    </p>
+      <p class="subtitle">
+        Analista de Operaciones | Seguridad | Tecnología
+      </p>
 
-    <div class="buttons">
-      <a href="https://www.linkedin.com/in/oscar-joel-rivera-morales-" target="_blank" class="btn">
-        LinkedIn
-      </a>
+      <p class="subtext">
+        Más de 10 años en control y análisis en entornos críticos en el área logística y bancaria.
+      </p>
 
-      <a href="https://www.credly.com/users/oscar-rivera.74eac1dc" target="_blank" class="btn">
-        Credly
-      </a>
+      <div class="buttons">
+        <a href="https://www.linkedin.com/in/oscar-joel-rivera-morales-" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://www.credly.com/users/oscar-rivera.74eac1dc" target="_blank" class="btn">Credly</a>
+      </div>
     </div>
+
+    <!-- RADAR -->
+    <div class="radar-container">
+      <div class="radar">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
   </header>
-
-  <!-- RADAR -->
-  <div class="radar-container">
-    <div class="radar">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="line"></div>
-    </div>
-  </div>
 
   <div class="scanner-line"></div>
 
@@ -58,7 +56,7 @@
     </p>
     <p>
       Especializado en trazabilidad de flota, monitoreo GPS y CCTV,
-      así como en la generación de KPIs para la toma de decisiones.
+      generación de KPIs y toma de decisiones estratégicas.
     </p>
   </section>
 
@@ -71,8 +69,15 @@
     <p>Analista de Operaciones Logísticas | 2023 – Actualidad</p>
     <ul>
       <li>Monitoreo GPS y control operativo</li>
-      <li>Análisis de KPIs e incidencias</li>
+      <li>Análisis de incidencias y KPIs</li>
       <li>Optimización de procesos logísticos</li>
+    </ul>
+
+    <h3>Concord Security</h3>
+    <p>Oficial de Control de Operaciones | 2021 – 2023</p>
+    <ul>
+      <li>Supervisión de operaciones y cumplimiento</li>
+      <li>Gestión de incidencias</li>
     </ul>
 
     <h3>BAC Credomatic</h3>
@@ -80,6 +85,13 @@
     <ul>
       <li>Auditorías y análisis de riesgos</li>
       <li>Control de CCTV y accesos</li>
+    </ul>
+
+    <h3>Credicorp Bank</h3>
+    <p>Analista de Monitoreo | 2015 – 2018</p>
+    <ul>
+      <li>Monitoreo centralizado</li>
+      <li>Análisis de incidentes</li>
     </ul>
   </section>
 
@@ -89,7 +101,7 @@
     <h2>Habilidades</h2>
 
     <div class="skill">
-      <span>Monitoreo GPS</span>
+      <span>Manejo de sistemas de gestión de solicitudes y sistema Cognos </span>
       <div class="bar"><div style="width:90%"></div></div>
     </div>
 
@@ -99,17 +111,55 @@
     </div>
 
     <div class="skill">
-      <span>CCTV & Seguridad</span>
+      <span>Manejo y configuración de software de control de accesos, CCTV y GPS </span>
       <div class="bar"><div style="width:80%"></div></div>
     </div>
+
+    <div class="skill">
+      <span>Gestión de Riesgos</span>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICACIONES -->
+  <section class="card fade-in">
+    <p class="section-tag">04 — CERTIFICATIONS</p>
+    <h2>Certificaciones</h2>
+    <ul>
+      <li>Cisco Networking Academy</li>
+      <li>Seguridad Industrial y Riesgo Profesional – Seguridad de la Información</li>
+      <li>Ethical Hacking </li>
+      <li>Industrial Networking Essentials</li>
+    </ul>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section class="card fade-in">
+    <p class="section-tag">05 — EDUCATION</p>
+    <h2>Formación Académica</h2>
+    <ul>
+      <li>Licenciatura en Gerencia de Sistemas (en pausa)</li>
+      <li>Técnico en IT Essentials – Cisco </li>
+      <li>Bachiller en Comercio</li>
+    </ul>
+  </section>
+
+  <!-- EXTRA -->
+  <section class="card fade-in">
+    <p class="section-tag">06 — EXTRA</p>
+    <h2>Información Adicional</h2>
+    <ul>
+      <li>Español: Nativo</li>
+      <li>Inglés: Básico</li>
+      <li>Actualmente iniciando como instructor en NetDreamTeam Academy</li>
+      <li>Experiencia en sector bancario</li>
+    </ul>
   </section>
 
 </div>
 
-<!-- SCROLL ANIMACIÓN -->
 <script>
 const elements = document.querySelectorAll('.fade-in');
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -117,11 +167,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 elements.forEach(el => observer.observe(el));
 </script>
 
-<!-- FONDO TECNOLÓGICO -->
 <script>
 const canvas = document.getElementById("bg-animation");
 const ctx = canvas.getContext("2d");
