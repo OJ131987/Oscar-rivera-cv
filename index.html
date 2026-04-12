@@ -21,10 +21,7 @@
     </p>
 
     <p class="subtext">
-      Analista de Operaciones Logísticas con más de 10 años de experiencia en monitoreo, control operativo y análisis en entornos bancarios y logísticos.
-Experiencia en trazabilidad de flota y mercancía, mediante el uso de sistemas Cognos, GPS y CCTV, así como en la generación de KPIs e informes operativos para la toma de decisiones.
-Experiencia en auditorías, gestión de riesgos y cumplimiento normativo, con enfoque en la detección de incidencias, optimización de procesos. 
-Formación en redes y ciberseguridad aplicada al fortalecimiento del monitoreo, control y uso de herramientas tecnológicas en operaciones.
+      Más de 10 años de experiencia en monitoreo, control operativo y análisis en entornos bancarios y logísticos.
     </p>
 
     <div class="buttons">
@@ -48,6 +45,15 @@ Formación en redes y ciberseguridad aplicada al fortalecimiento del monitoreo, 
       <li>Control y seguimiento de viajes, unidades y mercancía</li>
       <li>Coordinación con supervisores para control de sellos y operaciones</li>
       <li>Monitoreo mediante CCTV para control y seguridad operativa</li>
+    </ul>
+
+    <h3>Net Dream Team Academy</h3>
+    <p><strong>Instructor – Cisco Networking Academy</strong> | 2026 – Actualidad</p>
+    <ul>
+      <li>Facilitación de contenidos en redes y ciberseguridad</li>
+      <li>Formación técnica de estudiantes en entornos tecnológicos</li>
+      <li>Desarrollo de habilidades de comunicación técnica y capacitación</li>
+      <li>Participación en iniciativas académicas y formación en tecnologías Cisco</li>
     </ul>
 
     <h3>Concord Security S.A.</h3>
@@ -96,9 +102,11 @@ Formación en redes y ciberseguridad aplicada al fortalecimiento del monitoreo, 
       <li>Monitoreo GPS (Starflex)</li>
       <li>Control de operaciones logísticas</li>
       <li>Análisis de KPIs e incidencias</li>
+      <li>Elaboración de reportes operativos</li>
       <li>Gestión de riesgos operativos</li>
       <li>Auditoría y cumplimiento</li>
       <li>Monitoreo CCTV</li>
+      <li>Coordinación operativa</li>
       <li>Comunicación técnica y capacitación</li>
     </ul>
   </section>
@@ -112,8 +120,8 @@ Formación en redes y ciberseguridad aplicada al fortalecimiento del monitoreo, 
       <li>Cisco Networking Academy (Redes, Ciberseguridad, Data Analytics)</li>
       <li>Formación en Redes (Switching y fundamentos de infraestructura) (en curso)</li>
       <li>Formación en Ethical Hacking (en curso)</li>
-      <li>Seguridad Industrial y Riesgo Profesionales</li>
-      <li>Analisis de Datos</li>
+      <li>ISO 27001 – Seguridad de la Información</li>
+      <li>NDG Linux</li>
       <li>Industrial Networking Essentials</li>
     </ul>
   </section>
@@ -140,10 +148,9 @@ Formación en redes y ciberseguridad aplicada al fortalecimiento del monitoreo, 
 
 </div>
 
-<!-- ANIMACIÓN SCROLL -->
+<!-- SCROLL ANIMATION -->
 <script>
 const elements = document.querySelectorAll('.fade-in');
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -151,11 +158,10 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 elements.forEach(el => observer.observe(el));
 </script>
 
-<!-- FONDO TECNOLÓGICO -->
+<!-- FONDO ANIMADO -->
 <script>
 const canvas = document.getElementById("bg-animation");
 const ctx = canvas.getContext("2d");
@@ -183,7 +189,7 @@ function animate() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-    ctx.fillStyle = "#22c55e";
+    ctx.fillStyle = "#38bdf8";
     ctx.fill();
 
     particles.forEach(p2 => {
@@ -192,7 +198,7 @@ function animate() {
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
         ctx.lineTo(p2.x, p2.y);
-        ctx.strokeStyle = "rgba(34,197,94,0.1)";
+        ctx.strokeStyle = "rgba(56,189,248,0.1)";
         ctx.stroke();
       }
     });
@@ -206,4 +212,4 @@ animate();
 </script>
 
 </body>
-                                                                                    </html>
+</html>
