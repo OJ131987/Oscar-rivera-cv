@@ -1,7 +1,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #020617;
+
+  background: linear-gradient(
+    rgba(2,6,23,0.85),
+    rgba(2,6,23,0.95)
+  ),
+  url('fondo.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   color: #e5e7eb;
 }
 
@@ -20,49 +30,43 @@ body {
   padding: 30px 20px;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   margin-bottom: 20px;
 }
 
 h1 {
-  color: #22c55e;
-  margin-bottom: 5px;
+  color: #38bdf8;
 }
 
 .subtitle {
-  color: #4ade80;
+  color: #7dd3fc;
 }
 
 .subtext {
   color: #94a3b8;
-  margin-bottom: 15px;
 }
 
-/* BOTONES */
 .btn {
-  border: 1px solid #22c55e;
-  color: #22c55e;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
   padding: 8px 18px;
   margin: 5px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #22c55e;
+  background: #38bdf8;
   color: black;
 }
 
-/* TARJETAS */
 .card {
   background: rgba(2,6,23,0.7);
   padding: 18px;
   margin-bottom: 20px;
-  border-left: 2px solid #22c55e;
+  border-left: 2px solid #38bdf8;
 }
 
-/* ANIMACIONES */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
