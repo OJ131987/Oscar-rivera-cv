@@ -1,90 +1,75 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
-  background: linear-gradient(rgba(2,6,23,0.9), rgba(2,6,23,0.95)),
-              url('fondo.jpg');
-
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
+  background: #020617;
   color: #e5e7eb;
+}
+
+#bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
+/* HERO */
 .hero {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
   color: #22c55e;
+  margin-bottom: 5px;
 }
 
 .subtitle {
   color: #4ade80;
 }
 
+.subtext {
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+/* BOTONES */
 .btn {
   border: 1px solid #22c55e;
   color: #22c55e;
-  padding: 10px 20px;
-  margin: 10px;
-  display: inline-block;
+  padding: 8px 18px;
+  margin: 5px;
   text-decoration: none;
 }
 
+.btn:hover {
+  background: #22c55e;
+  color: black;
+}
+
+/* TARJETAS */
 .card {
   background: rgba(2,6,23,0.7);
-  padding: 20px;
-  margin: 30px 0;
+  padding: 18px;
+  margin-bottom: 20px;
   border-left: 2px solid #22c55e;
 }
 
-/* RADAR */
-.radar-container {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
+/* ANIMACIONES */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
 }
 
-.radar {
-  width: 200px;
-  height: 200px;
-  border: 2px solid rgba(34,197,94,0.3);
-  border-radius: 50%;
-  position: relative;
-}
-
-.circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(34,197,94,0.2);
-  border-radius: 50%;
-  animation: pulse 3s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(0.3); opacity: 0.7; }
-  100% { transform: scale(1.2); opacity: 0; }
-}
-
-.line {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #22c55e;
-  top: 50%;
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
